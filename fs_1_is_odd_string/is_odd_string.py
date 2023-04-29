@@ -27,5 +27,10 @@ def is_odd_string(word):
         >>> is_odd_string('amazing')
         True
     """
-
+    start = ord("a")-1
+    word.lower()
+    sum = 0
+    for char in word:
+        sum = sum + (ord(char)-start)
+    return sum % 2 ==1
     # Hint: you may find the ord() function useful here
